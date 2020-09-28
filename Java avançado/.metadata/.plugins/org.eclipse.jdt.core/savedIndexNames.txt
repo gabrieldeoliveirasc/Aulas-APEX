@@ -1,0 +1,9 @@
+INDEX VERSION 1.131+C:\Users\Apex02\Desktop\Gabriel\Java avançado\.metadata\.plugins\org.eclipse.jdt.core
+3609932204.index
+3055150798.index
+3022788989.index
+2985148593.index
+3031825179.index
+2958877087.index
+1025233017.index
+2859992220.index

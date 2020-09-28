@@ -1,0 +1,26 @@
+package bd;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Conecxao {
+	
+	// Atributo contendo o acesso ao bd
+	public static Connection con;
+	
+	// Abrir a conexão
+	public static void abrirConexao() {
+		try {
+			con = DriverManager.getConnection("jdbc:mysql://localhost/java_banco", "root", "apex");
+			
+			
+			
+			System.out.println("Conexão OK");
+		}catch(Exception erro) {
+			System.out.println("Falha ao conectar");
+		}
+	}
+	
+	// Fechar a conexão
+
+}

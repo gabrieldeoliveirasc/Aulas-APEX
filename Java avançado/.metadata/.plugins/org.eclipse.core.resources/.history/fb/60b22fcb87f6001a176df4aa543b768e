@@ -1,0 +1,60 @@
+package formulario;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.Color;
+import javax.swing.JTextField;
+import javax.swing.JComboBox;
+
+public class Formulario extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField txtProduto;
+
+	/**
+	 * Launch the application.
+	 */
+
+
+	/**
+	 * Create the frame.
+	 */
+	public Formulario() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblProduto = new JLabel("Produto");
+		lblProduto.setForeground(Color.RED);
+		lblProduto.setFont(new Font("Times New Roman", Font.PLAIN, 19));
+		lblProduto.setBounds(32, 25, 73, 58);
+		contentPane.add(lblProduto);
+		
+		txtProduto = new JTextField();
+		txtProduto.setBounds(115, 47, 233, 20);
+		contentPane.add(txtProduto);
+		txtProduto.setColumns(10);
+		
+		JLabel lblMarca = new JLabel("Marca");
+		lblMarca.setForeground(Color.RED);
+		lblMarca.setFont(new Font("Times New Roman", Font.PLAIN, 19));
+		lblMarca.setBounds(32, 94, 73, 58);
+		contentPane.add(lblMarca);
+		
+
+		
+		
+		JComboBox cbxMarca = new JComboBox();
+		cbxMarca.setBounds(115, 116, 233, 20);
+		contentPane.add(cbxMarca);
+	}
+}

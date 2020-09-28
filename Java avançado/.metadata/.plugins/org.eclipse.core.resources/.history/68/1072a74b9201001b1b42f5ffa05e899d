@@ -1,0 +1,13 @@
+package controle;
+
+import modelo.Modelo;
+
+public class Controle {
+
+	public static String(Modelo modelo) {
+		if(modelo.getEmail().equals("gabriel@gmail.com") && modelo.getSenha().equals("12345")){
+			
+		}
+	}
+	
+}

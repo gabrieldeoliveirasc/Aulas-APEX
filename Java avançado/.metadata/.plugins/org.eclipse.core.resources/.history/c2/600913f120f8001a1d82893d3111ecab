@@ -1,0 +1,16 @@
+package principal;
+
+import bd.Conecxao;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Conecxao.abrirConexao();
+
+		// Cadastrar Usuários
+		
+		
+	}
+
+}

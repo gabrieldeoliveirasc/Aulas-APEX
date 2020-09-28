@@ -1,0 +1,60 @@
+package formulario;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JComboBox;
+
+public class Formulario extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Formulario frame = new Formulario();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Formulario() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblProdutos = new JLabel("Produtos");
+		lblProdutos.setBounds(25, 34, 148, 47);
+		contentPane.add(lblProdutos);
+		
+		JComboBox comboBox = new JComboBox();
+		
+		comboBox.addItem("Computador");
+		comboBox.addItem("Celular");
+		comboBox.addItem("Geladeira");
+		comboBox.addItem("Televisão");
+		comboBox.addItem("Sofá");
+		comboBox.addItem("Rádio");
+		
+		
+		comboBox.setBounds(284, 47, 103, 20);
+		contentPane.add(comboBox);
+	}
+}

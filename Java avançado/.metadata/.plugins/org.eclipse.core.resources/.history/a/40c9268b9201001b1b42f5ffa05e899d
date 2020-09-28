@@ -1,0 +1,23 @@
+package controle;
+
+import modelo.Modelo;
+
+public class Controle {
+
+	public static valida String(Modelo modelo) {
+		
+		String email = modelo.getEmail();
+		int senha = modelo.getSenha();
+		
+		String mensagem;
+		
+		if(email.equals("gabriel@gmail.com") && senha == 12345){
+			mensagem = "Usuário encontrado!";
+		}else {
+			mensagem = "Usuário ou senha incorretos";
+		}
+		
+		return mensagem;
+	}
+	
+}

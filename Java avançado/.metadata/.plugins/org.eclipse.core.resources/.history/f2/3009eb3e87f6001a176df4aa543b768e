@@ -1,0 +1,27 @@
+package controle;
+
+import javax.swing.DefaultComboBoxModel;
+
+public class MarcaControle {
+
+	public static DefaultComboBoxModel<MarcaModelo> listar(){
+		
+	
+	
+	// Objetos de classe MarcaModelo
+		MarcaModelo obj1 = new Marcamodelo("Apple", 1);
+		MarcaModelo obj2 = new Marcamodelo("Dell", 2);
+		MarcaModelo obj3 = new Marcamodelo("LG", 3);
+		MarcaModelo obj4 = new Marcamodelo("Samsung", 4);
+		MarcaModelo obj5 = new Marcamodelo("Sony", 5);
+		
+		//DefaultComboBoxModel
+		DefaultComboBoxModel<E>oxModel
+odelo> lst = new DefaultComboBoxModel<MarcaModelo>();
+	lst.addElement(obj1);
+	lst.addElement(obj2);
+	lst.addElement(obj3);
+	lst.addElement(obj4);
+	lst.addElement(obj5);
+	}
+}

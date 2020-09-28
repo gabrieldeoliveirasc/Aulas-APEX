@@ -1,0 +1,21 @@
+package controle;
+
+import javax.swing.table.DefaultTableModel;
+
+public class ProdutoControle {
+
+	// Retornar um conjunto de produtos
+	public static DefaultTableModel listar(){
+		
+		DefaultTableModel dtm = new DefaultTableModel();
+		dtm.addColumn("Produto");
+		dtm.addColumn("Marca");
+		dtm.addColumn("Valor");
+		
+		return dtm;
+		
+	}
+	
+	
+	
+}

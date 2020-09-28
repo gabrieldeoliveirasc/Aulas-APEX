@@ -1,0 +1,30 @@
+package principal;
+
+import java.sql.PreparedStatement;
+
+import bd.Conecxao;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Conecxao.abrirConexao();
+
+		// Cadastrar Usuários
+		try {
+			String sql = "INSERT INTO usuarios (nome, idade) VALUES (?, ?)";
+			
+			Conecxao.abrirConexao();
+			
+			PreparedStatement pstmt = Conecxao.con.prepareStatement(sql);
+			pstmt.setString(1, "Camila");
+			pstmt.setInt(2, 34);
+			
+			pstmt.execute();
+			
+		}catch (Exception erro) {
+		System.out.println("Falha ao cadastrar "+erro.getMessage());
+		
+	}
+
+}
